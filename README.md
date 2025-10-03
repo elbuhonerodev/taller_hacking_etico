@@ -46,13 +46,13 @@ Este laboratorio enseña técnicas de pentesting ético en un entorno controlado
 
 ```bash
 # Crear e instalar todo automáticamente
-cat > install_lab.sh << 'EOF'
+cat > impacket.sh << 'EOF'
 #!/bin/bash
 echo "🦉 Instalando Laboratorio Impacket..."
 sudo apt update && sudo apt install python3-impacket python3-pip nmap -y
 sudo pip3 install colorama netifaces
 mkdir -p ~/pentesting-lab && cd ~/pentesting-lab
-wget [URL_DEL_SCRIPT] -O hacker_menu.py && chmod +x hacker_menu.py
+wget [URL_DEL_SCRIPT] -O impacket.py && chmod +x impacket.py
 echo "✅ Instalación completada. Ejecuta: ./impacket.sh"
 EOF
 
